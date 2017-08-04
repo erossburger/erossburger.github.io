@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Edouard Rossburger - Développeur Front-End
 ---
 <main class="site_container">
 <div class="site">
