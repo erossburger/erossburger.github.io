@@ -1,6 +1,8 @@
-$font_main_desktop: 23px;
+$font_main_desktop: 20px;
 $font_main_medium: 17px;
 $font_main_small: 15px;
+$font_color:  #272727;
+
 
 *,
 *::before,
@@ -16,11 +18,10 @@ body{
   margin: 0; padding: 0; width: 100%; height: 100%;
 }
 
-
 body{
   font-family: 'Raleway', sans-serif;
   font-size: $font_main_desktop;
-  color: #272727;
+  color: $font_color;
   @media screen and (min-device-width : 768px) and (max-device-width: 1424px) {
     font-size: $font_main_medium;
   }
@@ -29,27 +30,35 @@ body{
   }
 }
 
-h1, h2, p, ul{
-  margin: 1em 0; }
 
-p, ul{
-  line-height: 1.5em;}
+// TYPO
 
+h1, h2, p, ul{margin: 1em 0; }
+input, textarea, button, table, p, ul{line-height: 1.5em; font-size: 1em;}
 em{font-style: italic;}
+a{text-decoration: none; color: inherit;}
+.link {position: relative;text-decoration: none;display: inline-block;color: $font_color;padding: 0 1px;transition: color ease 0.3s; cursor: pointer;
+  &::before, &::after {content: '';position: absolute;background-color: $font_color;z-index: -1;height: 2px;}
+  &::before {width: 0%;left: 0;bottom: 0;transition: width ease 0.4s;}
+  &::after {width: 100%;left: 0;bottom: 0;transition: all ease 0.6s;}
+  &:hover {
+    &::before {width: 100%;}
+    &::after {left: 100%;width: 0%;transition: all ease 0.2s;}
+  	}
+}
 
-h1{
-  font-size: 1.739em; line-height: 1.25em;
+h1{font-size: 1.739em; line-height: 1.25em; position: relative; padding-bottom: 25px;
+	&:after{content:""; position: absolute; bottom: 0; left: 0; background: currentColor; width: 50px; marmargin-top: 25px;height: 5px;}
   span{font-weight: 700;}
 }
 
-h2{
-  font-size: 1.304em; font-weight: 700; line-height: 1.25em;
-}
+h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
 
-ul.list_ref{
-  a{color: inherit;}
+.list_ref{
   li:before{content:"-"; padding-right: 15px;}
 }
+
+// CONTENT
 
 .site_container{
   @media only screen and (min-device-width : 1025px){
@@ -65,7 +74,7 @@ ul.list_ref{
       &.illustration{
         background: url(../images/singularity_876.jpg) no-repeat center; background-size: cover;
         @media only screen and (min-device-width : 1025px){
-          width: 45%;
+          width: 42%;
           }
         @media only screen and (max-device-width : 1024px){
           height: 50vh;
@@ -77,9 +86,42 @@ ul.list_ref{
       &.content{
         padding: 0 3%;
         @media only screen and (min-device-width : 1025px){
-          width: 55%;
+          width: 58%;
           }
       }
     }
   }
+}
+
+// SVG
+
+.path {stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: draw 10s forwards ease-in-out;animation-delay: 1.5s;fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10;stroke-width: 2px;}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+// POP UP
+
+.overlay{width: 100%;min-height: 100vh;display: flex;justify-content: center;align-items: center;flex-direction: column;padding: 40px;position: fixed;top: 0;left: 0;background: rgba(white, 1);opacity: 0;pointer-events: none;transition: 0.35s ease-in-out;max-height: 100vh;overflow-y: auto;
+    &.open{opacity: 1;pointer-events: inherit;}
+    .modal{background: white;text-align: center;box-shadow: 0px 1px 10px rgba(white, 0.35);opacity: 0;pointer-events: none;transition: 0.35s ease-in-out;max-height: 100vh;overflow-y: auto; position: relative;
+        &.open{opacity: 1;pointer-events: inherit;
+            .content{transform: translate(0, -0px);opacity: 1;}
+				}
+    .content{transform: translate(0, -10px);opacity: 0;transition: .35s ease-in-out;
+			form{
+				input, textarea{width: 100%; border: 0; outline: 0; padding: 10px; border: 1px solid #545454; margin: 10px 0;}
+				button{border: 0; outline: 0; background: none;}
+			}
+			.close-modal{position: absolute; top: 0; right: 0; font-size: 30px;}
+
+		}
+	}
 }
