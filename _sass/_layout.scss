@@ -1,0 +1,85 @@
+$font_main_desktop: 23px;
+$font_main_medium: 17px;
+$font_main_small: 15px;
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+html,
+body{
+  margin: 0; padding: 0; width: 100%; height: 100%;
+}
+
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: $font_main_desktop;
+  color: #272727;
+  @media screen and (min-device-width : 768px) and (max-device-width: 1424px) {
+    font-size: $font_main_medium;
+  }
+  @media only screen and (max-device-width : 767px) {
+    font-size: $font_main_small;
+  }
+}
+
+h1, h2, p, ul{
+  margin: 1em 0; }
+
+p, ul{
+  line-height: 1.5em;}
+
+em{font-style: italic;}
+
+h1{
+  font-size: 1.739em; line-height: 1.25em;
+  span{font-weight: 700;}
+}
+
+h2{
+  font-size: 1.304em; font-weight: 700; line-height: 1.25em;
+}
+
+ul.list_ref{
+  a{color: inherit;}
+  li:before{content:"-"; padding-right: 15px;}
+}
+
+.site_container{
+  @media only screen and (min-device-width : 1025px){
+     padding: 3% 3% 0 3%;
+  }
+  height: 100%; position: relative;
+  .site{
+    display: table; table-layout: fixed; min-height: 100%; position: relative; padding-bottom: 3%;
+    .item{
+      @media only screen and (min-device-width : 1025px){
+        display: table-cell;
+        }
+      &.illustration{
+        background: url(/images/singularity_876.jpg) no-repeat center; background-size: cover;
+        @media only screen and (min-device-width : 1025px){
+          width: 45%;
+          }
+        @media only screen and (max-device-width : 1024px){
+          height: 50vh;
+          }
+        @media only screen and (max-device-width : 414px) and (orientation : portrait){
+          height: 100vw;
+          }
+      }
+      &.content{
+        padding: 0 3%;
+        @media only screen and (min-device-width : 1025px){
+          width: 55%;
+          }
+      }
+    }
+  }
+}
