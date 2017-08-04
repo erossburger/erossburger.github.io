@@ -6,7 +6,7 @@ layout: default
   <div class="item illustration">
   </div>
   <div class="item content">
-    <h1>Salut, je suisrr
+    <h1>Salut, je suis
       <br />
       <span>Edouard Rossburger.</span>
       <br />
