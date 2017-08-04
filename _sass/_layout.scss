@@ -111,7 +111,7 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
 
 .overlay{width: 100%;min-height: 100vh;display: flex;justify-content: center;align-items: center;flex-direction: column;padding: 40px;position: fixed;top: 0;left: 0;background: rgba(white, 1);opacity: 0;pointer-events: none;transition: 0.35s ease-in-out;max-height: 100vh;overflow-y: auto;
     &.open{opacity: 1;pointer-events: inherit;}
-    .modal{background: white;text-align: center;box-shadow: 0px 1px 10px rgba(white, 0.35);opacity: 0;pointer-events: none;transition: 0.35s ease-in-out;max-height: 100vh;overflow-y: auto; position: relative;
+    .modal{background: white;text-align: center;box-shadow: 0px 1px 10px rgba(white, 0.35);opacity: 0;pointer-events: none;transition: 0.35s ease-in-out;max-height: 100vh;overflow-y: auto; position: relative; padding: 0 1px;
         &.open{opacity: 1;pointer-events: inherit;
             .content{transform: translate(0, -0px);opacity: 1;}
 				}
