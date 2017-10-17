@@ -1,12 +1,10 @@
 # Site Settings
-title: Start Jekyll
-email: taniarascia@gmail.com
-description: >
-  A guide to getting started with Jekyll.
+title: Edouard Rossburger | Développeur Front-End
+email: edouard.rossburger@gmail.com
+description: Edouard Rossburger, développeur Front-End basé à Paris. Vous avez un projet à me confier? Parlons-en!
 baseurl: ""
 url: "http://localhost:4000"
-twitter_username: taniarascia
-github_username:  taniarascia
+github_username:  erossburger
 # Build Settings
 sass:
   sass_dir: _sass

@@ -7,6 +7,7 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
     <div class="item illustration box">
     </div>
     <div class="item content">
+      <div class="inner">
 
         <h1 class="box">Salut, je suis
           <br />
@@ -51,6 +52,8 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
         </div>
 
         <p class="box"><em>Illustration de <a class="link" target="_blank" href="http://www.jackvanzet.com/">Jack Vanzet</a></em></p>
+
+      </div>
 
         <!-- MODAL -->
         <div class='modal' id='modal1'>

@@ -61,12 +61,13 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
 // CONTENT
 
 .site_container{
-  @media only screen and (min-device-width : 1025px){
-     padding: 3% 3% 0 3%;
-  }
+  // @media only screen and (min-device-width : 1025px){
+  //    padding: 3% 3% 0 3%;
+  // }
   height: 100%; position: relative;
   .site{
-    display: table; table-layout: fixed; min-height: 100%; position: relative; padding-bottom: 3%;
+    display: table; table-layout: fixed; min-height: 100%; position: relative; width: 100%;
+    // padding-bottom: 3%;
     .item{
       @media only screen and (min-device-width : 1025px){
         display: table-cell;
@@ -74,19 +75,22 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
       &.illustration{
         background: url(../images/singularity_876.jpg) no-repeat center; background-size: cover;
         @media only screen and (min-device-width : 1025px){
-          width: 42%;
+          width: 50%;
           }
-        @media only screen and (max-device-width : 1024px){
-          height: 50vh;
-          }
-        @media only screen and (max-device-width : 414px) and (orientation : portrait){
-          height: 100vw;
-          }
+        // @media only screen and (max-device-width : 1024px){
+        //   height: 50vh;
+        //   }
+        // @media only screen and (max-device-width : 414px) and (orientation : portrait){
+        //   height: 100vw;
+        //   }
       }
       &.content{
-        padding: 0 3%;
+        padding: 0 3% 2%;
         @media only screen and (min-device-width : 1025px){
-          width: 58%;
+          width: 50%;
+          }
+          .inner{
+            float: left; max-width: 600px;
           }
       }
     }
