@@ -60,7 +60,7 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
         <div class='modal' id='modal1'>
             <div class='content'>
                 <h2>Contact</h2>
-                <p>N'hésitez pas à utilser le formulaire ci-dessous pour me contacter !</p>
+                <p>N'hésitez pas à utiliser le formulaire ci-dessous pour me contacter !</p>
                 <form method="POST" action="http://formspree.io/edouard.rossburger@gmail.com">
                   <input type="email" name="email" placeholder="Votre email">
                   <textarea name="message" placeholder="Votre message"></textarea>
