@@ -51,7 +51,7 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
           </a>
         </div>
 
-        <p class="box"><em>Illustration de <a class="link" target="_blank" href="http://www.jackvanzet.com/">Jack Vanzet</a></em></p>
+        <p class="box hidden-mobile notabene"><em><- Illustration de <a class="link" target="_blank" href="http://www.jackvanzet.com/">Jack Vanzet</a></em></p>
 
       </div>
 

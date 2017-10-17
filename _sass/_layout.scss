@@ -58,6 +58,8 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
   li:before{content:"-"; padding-right: 15px;}
 }
 
+.notabene{font-family: 'Kalam', cursive;}
+
 // CONTENT
 
 .site_container{
@@ -85,13 +87,16 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
         //   }
       }
       &.content{
-        padding: 0 3% 2%;
+        padding: 0 3% 20px;
         @media only screen and (min-device-width : 1025px){
           width: 50%;
           }
           .inner{
             float: left; max-width: 600px;
-          }
+        }
+        @media only screen and (max-device-width : 1024px){
+          .hidden-mobile{display: none;}
+        }
       }
     }
   }
