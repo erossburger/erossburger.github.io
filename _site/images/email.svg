@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2898.964 879.673 61.228 59.707">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="email" transform="translate(2901 881.739)">
+    <path id="Tracé_1" data-name="Tracé 1" class="cls-1" d="M78.625,101.231c1.3,2.885,10.916,11.3,11.83,11.349s15.821-13.32,15.388-14.234-30.151-1.2-30.968-.289-.529,21.062.192,21.639,29.958.625,30.584-.385,1.3-15.484.481-16.35" transform="translate(-62.198 -80.563)"/>
+    <path id="Tracé_2" data-name="Tracé 2" class="cls-1" d="M50.531,89.353c15.922,4.069,32-5.888,35.235-20.949C88.924,53.7,78.96,39.1,64.581,35.525,50,31.9,34.278,40.493,30.318,55.054c-6.054,22.8,14.6,32.929,15.641,32.927" transform="translate(-29.209 -34.698)"/>
+  </g>
+</svg>

@@ -61,7 +61,7 @@ body {
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   color: #272727; }
   @media screen and (min-device-width: 768px) and (max-device-width: 1424px) {
     body {
@@ -73,15 +73,62 @@ body {
 h1, h2, p, ul {
   margin: 1em 0; }
 
-p, ul {
-  line-height: 1.5em; }
+input, textarea, button, table, p, ul {
+  line-height: 1.5em;
+  font-size: 1em; }
 
 em {
   font-style: italic; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: #272727;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+  cursor: pointer; }
+  .link::before, .link::after {
+    content: '';
+    position: absolute;
+    background-color: #272727;
+    z-index: -1;
+    height: 2px; }
+  .link::before {
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width ease 0.4s; }
+  .link::after {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all ease 0.6s; }
+  .link:hover::before {
+    width: 100%; }
+  .link:hover::after {
+    left: 100%;
+    width: 0%;
+    transition: all ease 0.2s; }
+
 h1 {
   font-size: 1.739em;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  position: relative;
+  padding-bottom: 25px; }
+  h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: currentColor;
+    width: 50px;
+    marmargin-top: 25px;
+    height: 5px; }
   h1 span {
     font-weight: 700; }
 
@@ -90,41 +137,110 @@ h2 {
   font-weight: 700;
   line-height: 1.25em; }
 
-ul.list_ref a {
-  color: inherit; }
-ul.list_ref li:before {
+.list_ref li:before {
   content: "-";
   padding-right: 15px; }
 
 .site_container {
   height: 100%;
   position: relative; }
-  @media only screen and (min-device-width: 1025px) {
-    .site_container {
-      padding: 3% 3% 0 3%; } }
   .site_container .site {
     display: table;
     table-layout: fixed;
     min-height: 100%;
     position: relative;
-    padding-bottom: 3%; }
+    width: 100%; }
     @media only screen and (min-device-width: 1025px) {
       .site_container .site .item {
         display: table-cell; } }
     .site_container .site .item.illustration {
-      background: url(/images/singularity_876.jpg) no-repeat center;
+      background: url(../images/singularity_876.jpg) no-repeat center;
       background-size: cover; }
       @media only screen and (min-device-width: 1025px) {
         .site_container .site .item.illustration {
-          width: 45%; } }
-      @media only screen and (max-device-width: 1024px) {
-        .site_container .site .item.illustration {
-          height: 50vh; } }
-      @media only screen and (max-device-width: 414px) and (orientation: portrait) {
-        .site_container .site .item.illustration {
-          height: 100vw; } }
+          width: 50%; } }
     .site_container .site .item.content {
-      padding: 0 3%; }
+      padding: 0 3% 2%; }
       @media only screen and (min-device-width: 1025px) {
         .site_container .site .item.content {
-          width: 55%; } }
+          width: 50%; } }
+      .site_container .site .item.content .inner {
+        float: left;
+        max-width: 600px; }
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 10s forwards ease-in-out;
+  animation-delay: 1.5s;
+  fill: none;
+  stroke: #272727;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2px; }
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto; }
+  .overlay.open {
+    opacity: 1;
+    pointer-events: inherit; }
+  .overlay .modal {
+    background: white;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.35s ease-in-out;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: relative; }
+    .overlay .modal.open {
+      opacity: 1;
+      pointer-events: inherit; }
+      .overlay .modal.open .content {
+        transform: translate(0, 0px);
+        opacity: 1; }
+    .overlay .modal .content {
+      transform: translate(0, -10px);
+      opacity: 0;
+      transition: .35s ease-in-out;
+      padding: 0 1px; }
+      .overlay .modal .content form input, .overlay .modal .content form textarea {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        padding: 10px;
+        border: 1px solid #545454;
+        margin: 10px 0;
+        -webkit-appearance: none;
+        border-radius: 0; }
+      .overlay .modal .content form button {
+        border: 0;
+        outline: 0;
+        background: none; }
+      .overlay .modal .content .close-modal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px; }
