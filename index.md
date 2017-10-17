@@ -56,6 +56,7 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
       </div>
 
         <!-- MODAL -->
+        <div class="overlay">
         <div class='modal' id='modal1'>
             <div class='content'>
                 <h2>Contact</h2>
@@ -65,9 +66,10 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
                   <textarea name="message" placeholder="Votre message"></textarea>
                   <button type="submit" class="link">Envoyer</button>
                   <input type="hidden" name="_subject" value="Message en provenance de erossburger.github.io" />
-                </form>
-                <a class='close-modal' data-modal="#modal1" href="#">╳</a>
+                </form>                
             </div>
+        </div>
+        <a class='close-modal' data-modal="#modal1" href="#">╳</a>
         </div>
         <!-- /MODAL -->
     </div>

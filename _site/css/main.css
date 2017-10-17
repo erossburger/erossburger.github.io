@@ -245,8 +245,8 @@ h2 {
         border: 0;
         outline: 0;
         background: none; }
-      .overlay .modal .content .close-modal {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 30px; }
+  .overlay .close-modal {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px; }

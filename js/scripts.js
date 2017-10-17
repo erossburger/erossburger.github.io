@@ -1,6 +1,6 @@
-$(".modal").each( function(){
-	$(this).wrap('<div class="overlay"></div>')
-});
+// $(".modal").each( function(){
+// 	$(this).wrap('<div class="overlay"></div>')
+// });
 
 $(".open-modal").on('click', function(e){
 	e.preventDefault();

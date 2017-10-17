@@ -124,13 +124,13 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
         &.open{opacity: 1;pointer-events: inherit;
             .content{transform: translate(0, -0px);opacity: 1;}
 				}
+
     .content{transform: translate(0, -10px);opacity: 0;transition: .35s ease-in-out;padding: 0 1px;
 			form{
 				input, textarea{width: 100%; border: 0; outline: 0; padding: 10px; border: 1px solid #545454; margin: 10px 0;  -webkit-appearance: none;border-radius: 0;}
 				button{border: 0; outline: 0; background: none;}
 			}
-			.close-modal{position: absolute; top: 0; right: 0; font-size: 30px;}
-
 		}
 	}
+  .close-modal{position: absolute; top: 5%; right: 5%; font-size: 30px;}
 }
