@@ -163,13 +163,14 @@ h2 {
         .site_container .site .item.illustration {
           width: 50%; } }
     .site_container .site .item.content {
-      padding: 0 3% 20px; }
+      padding: 0 3%; }
       @media only screen and (min-device-width: 1025px) {
         .site_container .site .item.content {
           width: 50%; } }
       .site_container .site .item.content .inner {
         float: left;
-        max-width: 600px; }
+        max-width: 600px;
+        padding: 3% 0 10%; }
       @media only screen and (max-device-width: 1024px) {
         .site_container .site .item.content .hidden-mobile {
           display: none; } }

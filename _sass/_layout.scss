@@ -87,12 +87,12 @@ h2{font-size: 1.304em; font-weight: 700; line-height: 1.25em;}
         //   }
       }
       &.content{
-        padding: 0 3% 20px;
+        padding: 0 3%;
         @media only screen and (min-device-width : 1025px){
           width: 50%;
           }
           .inner{
-            float: left; max-width: 600px;
+            float: left; max-width: 600px; padding: 3% 0 10%;
         }
         @media only screen and (max-device-width : 1024px){
           .hidden-mobile{display: none;}
