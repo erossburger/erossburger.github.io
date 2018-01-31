@@ -24,7 +24,7 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
           <li><a class="link" target="_blank" href="http://www.alainboite.com/">Alain Boite</a> <em>(site vitrine)</em></li>
           <li><a class="link" target="_blank" href="https://adresses-incontournables.madame.lefigaro.fr/">Madame Figaro</a> <em>(blog Wordpress)</em></li>
           <li><a class="link" target="_blank" href="http://selection-redaction.mariefrance.fr/">Marie France</a> <em>(blog Wordpress)</em></li>
-          <li><a class="link" target="_blank" href="https://www.koba-civique.com/">Koba civique</a> <em>(site vitrine, Jekyll)</em></li>
+          <!--<li><a class="link" target="_blank" href="https://www.koba-civique.com/">Koba civique</a> <em>(site vitrine, Jekyll)</em></li>-->
           <li><em>... et beaucoup, beaucoup d’autres</em></li>
         </ul>
 
