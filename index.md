@@ -20,7 +20,6 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
 
         <h2 class="box">Développés avec amour</h2>
         <ul class="box list_ref">
-          <li><a class="link" target="_blank" href="https://visibleo.fr/">Visibleo</a> <em>(site vitrine, Rails)</em></li>
           <li><a class="link" target="_blank" href="http://www.alainboite.com/">Alain Boite</a> <em>(site vitrine)</em></li>
           <li><a class="link" target="_blank" href="https://adresses-incontournables.madame.lefigaro.fr/">Madame Figaro</a> <em>(blog Wordpress)</em></li>
           <li><a class="link" target="_blank" href="http://selection-redaction.mariefrance.fr/">Marie France</a> <em>(blog Wordpress)</em></li>
