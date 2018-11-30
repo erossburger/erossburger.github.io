@@ -16,14 +16,14 @@ title: Edouard Rossburger | Développeur Front-End | Paris | France
           Je suis développeur front-end
         </h1>
 
-        <p class="box">Je développe des sites internet depuis 2012. Après une belle expérience de 4 ans en agence, je travaille aujourd’hui en freelance, principalement sur des projets Wordpress.</p>
+        <p class="box">Je développe des sites WEB depuis 2012. Après une belle expérience de 4 ans en agence, je travaille aujourd’hui en freelance, principalement sur des projets Wordpress.</p>
 
-        <h2 class="box">Développés avec amour</h2>
+        <h2 class="box">Développés avec amour :</h2>
         <ul class="box list_ref">
           <li><a class="link" target="_blank" href="http://www.alainboite.com/">Alain Boite</a> <em>(site vitrine)</em></li>
           <li><a class="link" target="_blank" href="http://www.latelieraquafitness.com/">L'Atelier Aquafitness</a> <em>(site vitrine)</em></li>
-           
-          <!--<li><a class="link" target="_blank" href="https://www.koba-civique.com/">Koba civique</a> <em>(site vitrine, Jekyll)</em></li>-->
+          <li><a class="link" target="_blank" href="https://www.nord-espaces.com/">Nord Espaces</a> <em>(Wordpress)</em></li>
+          <li><a class="link" target="_blank" href="http://parisoffice.fr/">Paris Office</a> <em>(Wordpress)</em></li>
           <li><em>... et beaucoup, beaucoup d’autres</em></li>
         </ul>
 
